@@ -1,0 +1,12 @@
+airdroping
+Generate SOL and send it to your own wallet
+
+Use cases of airdroping
+Test features of solana without spending real money
+Build fully-fledged Solanda applications without spending real money
+
+solana wallet
+public key = email
+secret key = password
+send/receive sol = send/receive emails
+
