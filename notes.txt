@@ -10,3 +10,62 @@ public key = email
 secret key = password
 send/receive sol = send/receive emails
 
+smart contract a piece of code that runs in the solana blockchain
+
+Solana Program Library
+
+Creating vs minting tokens
+Creating you need to specify the attritbutes before to create the tokens.
+Minting you don't to specify the attritbutes, only need the amount of tokens that will be created.
+
+Solana installation
+https://github.com/LearnWithArjun/solana-env-setup
+brew install solana
+
+Generate new key
+solana-keygen new --force
+solana-keygen pubkey
+
+pubkey: EsAN7KWmbYdJnvVQk6G8aobU2ZNyoB2EmjW8voKq33Ws
+passphrase 
+priority merge chaos garage desert echo blanket kangaroo enjoy hair seminar wash
+
+Get balance
+solana balance --url devnet
+
+## Airdrop 2 SOL
+solana airdrop 2 EsAN7KWmbYdJnvVQk6G8aobU2ZNyoB2EmjW8voKq33Ws --url devnet
+
+explorar.solana.com // devnet
+
+spl-token create-token --url devnet
+Creating token ATMkNmN2PXjzSPgWkZcxEY8jxp4QpXxdNpbxbjtD8jxi
+Address:  ATMkNmN2PXjzSPgWkZcxEY8jxp4QpXxdNpbxbjtD8jxi
+Decimals:  9
+Signature: 2sBCi3RFY9xXxRUug5h9JiXbBAJgHk9o8P4adw8wHEzN3JFcvZzmZr14saG8jeRmnMa86GQkXXtijHfpqqERN81k
+
+spl-token create-account ATMkNmN2PXjzSPgWkZcxEY8jxp4QpXxdNpbxbjtD8jxi --url devnet
+token account address
+Creating account 85BRDKa4W14vyJLt75iubXDNCbX2xNVGhMbjuvEbUyZn
+
+spl-token balance ATMkNmN2PXjzSPgWkZcxEY8jxp4QpXxdNpbxbjtD8jxi --url devnet
+0
+
+spl-token mint ATMkNmN2PXjzSPgWkZcxEY8jxp4QpXxdNpbxbjtD8jxi 1000 --url devnet
+
+spl-token balance ATMkNmN2PXjzSPgWkZcxEY8jxp4QpXxdNpbxbjtD8jxi --url devnet
+1000
+
+spl-token supply ATMkNmN2PXjzSPgWkZcxEY8jxp4QpXxdNpbxbjtD8jxi --url devnet
+1000
+
+spl-token authorize ATMkNmN2PXjzSPgWkZcxEY8jxp4QpXxdNpbxbjtD8jxi mint --disable --url devnet
+
+spl-token burn 85BRDKa4W14vyJLt75iubXDNCbX2xNVGhMbjuvEbUyZn 100 --url devnet
+
+spl-token balance ATMkNmN2PXjzSPgWkZcxEY8jxp4QpXxdNpbxbjtD8jxi --url devnet
+
+phantom wallet
+5z9VSmNkJq79Lbf79uk5z5ZZhVeE4PTMgMSjn4wgVej5
+
+Account = "file" that is stored on the solana blockchain
